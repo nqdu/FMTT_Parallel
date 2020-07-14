@@ -1,2 +1,2 @@
 # FMTT_Parallel
-A parallel version for FMTT
+A parallel version of FMTT
