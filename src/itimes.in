@@ -1,0 +1,9 @@
+ak135.vel                   c: 1-D reference velocity model
+sources.dat                 c: File containing source info.
+gridi.vtx                   c: File containing velocity vertex info.
+fm3dt.in                    c: FMM parameter file
+aktsurf.out                 c: File containing times at surface
+itimes.out                  c: Output file of times to model base
+0                           c: Use P (0) or S (1) wavespeeds
+1.0                         c: Depth discretization of 1-D model (km)
+6371.0                      c: Earth radius in km

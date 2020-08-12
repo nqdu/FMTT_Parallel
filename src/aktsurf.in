@@ -1,0 +1,6 @@
+gridi.vtx                   c: Input file containing vertex locations
+fm3dt.in                    c: Parameter file containing dicing factors
+sources.dat                 c: Input file containing source location
+receivers.dat               c: Input receiver file
+0                           c: Use P (0) or S (1) wavespeeds
+aktsurf.out                 c: Output File containing ak135 predictions
