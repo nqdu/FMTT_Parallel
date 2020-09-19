@@ -1,0 +1,9 @@
+#------------------------------------------
+# Parameters you need to modify
+#-------------------------------------------
+2010 2016               # start,end year
+110 130 -12 12          # station range,lonmin,lonmax,latmin,latma
+103 137 -19 19          # source range 
+35 85                   # deg range
+1                       # teleseismic? if not, set to 0
+P                       # phase
