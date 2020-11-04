@@ -1,0 +1,55 @@
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c Set grid size and location
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+13                    c: Number of radial grid points
+35                    c: Number of grid points in theta (N-S)
+37                    c: Number of grid points in phi (E-W)
+1.50                  c: Radial origin of grid (km) -> top
+-31.5                 c: N-S origin of grid (degrees) -> north
+138.0                 c: E-W origin of grid (degrees) -> west
+25.0                  c: Radial node separation (km)
+0.239                 c: N-S grid separation (degrees)
+0.355                 c: E-W grid separation (degrees)
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c Set grid velocity values
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+0                     c: Use model(0) or constant gradient (1)
+0                     c: Use P (0) or S (1) velocity model
+ak135mb.vel           c: Velocity model (option 1 below)
+6.0                   c: Velocity at origin (km/s)
+8.0                   c: Velocity at maximum depth (km/s)
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c Optionally apply random structure
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+0                     c: Add random structure (0=no,1=yes)
+2.00                  c: Scaling factor
+1                     c: Add a priori model covariance (0=no,1=yes)?
+0.3                   c: Diagonal elements of covariance matrix
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c Optionally apply checkerboard
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+0                     c: Add checkerboard (0=no,1=yes)
+0.40                  c: Maximum perturbation of vertices
+2                     c: Checkerboard size (NxN)
+1                     c: Use spacing (0=no,1=yes)
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c Optionally, apply spikes
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+0                     c: Apply spikes (0=no,1=yes)
+6                     c: Number of spikes
+-0.40                  c: Amplitude of spike 1                  
+-100.0 -42.1  146.4   c: Coordinates of spike 1
+0.40                  c: Amplitude of spike 2
+-60.0 -41.4  146.4    c: Coordinates of spike 2
+0.40
+-20.0 -41.4  145.2
+-0.40
+-20.0 -41.4  147.6
+-0.40   
+-60.0 -40.7  145.2
+0.40
+-100.0 -40.7  147.6
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c Set output file name
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+grid3d.vtx

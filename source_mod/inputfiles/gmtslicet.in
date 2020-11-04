@@ -1,0 +1,49 @@
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c Input file names
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+../gridc.vtx                c: True model velocity vertices
+../gridi.vtx                c: Reference model velocity vertices
+../travelt.out              c: Traveltime field
+../raypath.out              c: Raypaths
+ccccccccccccccccccccccccccccccccccccccccccccccc
+c Slice parameters
+ccccccccccccccccccccccccccccccccccccccccccccccc
+1                           c: Extract depth slice? (0=no, 1=yes)
+-140.0                      c: Depth of slice
+bounddp.gmt                 c: GMT plotting bounds for depth slice
+1                           c: Extract N-S slice? (0=no, 1=yes)
+147.0                       c: Longitude of slice
+boundns.gmt                 c: GMT plotting bounds for N-S slice
+1                           c: Extract E-W slice? (0=no, 1=yes)
+-34.7                       c: Latitude of slice
+boundew.gmt                 c: GMT plotting bounds for E-W slice
+ccccccccccccccccccccccccccccccccccccccccccccccc
+c Velocity grid parameters
+ccccccccccccccccccccccccccccccccccccccccccccccc
+1                           c: Plot depth slice? (0=no,1=yes)
+6   6                       c: Dicing in theta,phi
+grid2dvd.z                  c: GMT output file for depth slice
+1                           c: Plot N-S slice? (0=no,1=yes)
+6   6                       c: Dicing in r,theta
+grid2dvns.z                 c: GMT output file for N-S slice
+1                           c: Plot E-W slice? (0=no,1=yes)
+6   9                       c: Dicing in r,phi
+grid2dvew.z                 c: GMT output file for E-W slice
+ccccccccccccccccccccccccccccccccccccccccccccccc
+c Traveltime grid parameters
+ccccccccccccccccccccccccccccccccccccccccccccccc
+0                           c: Plot depth slice? (0=no,1=yes)
+grid2ddp.z                  c: GMT output for depth slice
+0                           c: Plot N-S slice? (0=no,1=yes)
+grid2dns.z                  c: GMT output for N-S slice
+0                           c: Plot N-S slice? (0=no,1=yes)
+grid2dew.z                  c: GMT output for N-S slice
+ccccccccccccccccccccccccccccccccccccccccccccccc
+c Ray path parameters
+ccccccccccccccccccccccccccccccccccccccccccccccc
+0                           c: Project raypaths in depth? (0=no,1=yes)
+raysd.dat                   c: Output ray path file for depth slice
+0                           c: Project raypaths in N-S? (0=no,1=yes)
+raysns.dat                  c: Output ray path file for N-S slice
+0                           c: Project raypaths in E-W? (0=no,1=yes)
+raysew.dat                  c: Output ray path file for E-W slice
